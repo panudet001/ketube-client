@@ -1,0 +1,87 @@
+.table-partner-ticket-request-component {
+  .card-page {
+    display: none;
+  }
+
+  .card-table {
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;
+
+    .text-link {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    .data-table {
+      width: 100%;
+
+      th {
+        padding: 12px 8px;
+        text-align: start;
+        background: rgb(255 255 255 / 5%);
+
+        .icon-sort {
+          cursor: pointer;
+        }
+      }
+
+      td {
+        padding: 12px 8px;
+        text-align: start;
+      }
+
+      .card-image {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .show-image {
+          width: 37px;
+          height: 37px;
+        }
+      }
+
+      @media (width <= 1000px) {
+        display: none;
+      }
+    }
+
+    .data-table-mobile {
+      display: none;
+
+      .rounded-normal {
+        box-shadow: none;
+      }
+
+      .card-body {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: rgb(255 255 255 / 5%);
+
+        .show-image {
+          width: 76px;
+          height: 76px;
+        }
+
+        .card-item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          text-align: start;
+
+          .text-by {
+            color: $silver;
+          }
+        }
+      }
+
+      @media (width <= 1000px) {
+        display: block;
+      }
+    }
+  }
+}

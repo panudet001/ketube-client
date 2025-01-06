@@ -1,0 +1,66 @@
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  cursor: pointer;
+
+  .icon-album {
+    padding: 2px;
+  }
+
+  .icon-menu {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+  }
+
+  .icon-mat {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background: rgb(255 255 255 / 10%);
+  }
+
+  i {
+    margin-right: 12px;
+    font-size: 18px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dropdown-sub-menu {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  z-index: 1;
+  width: 150px !important;
+  padding: 10px 0;
+  margin-top: 40px;
+  margin-right: -5px;
+  text-align: left;
+  background: $black-russian;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 rgb(255 255 255 / 20%);
+
+  .title-name {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .icon-arrow {
+    font-size: 14px;
+  }
+}

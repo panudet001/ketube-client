@@ -1,0 +1,78 @@
+/********************************************   */
+//                    FONT
+
+/********************************************   */
+
+/********************************************   */
+//                BeVietnamPro
+
+/********************************************   */
+
+@font-face {
+  font-family: BeVietnamPro;
+  font-weight: 700;
+  src: url("assets/fonts/en/BeVietnamPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: BeVietnamPro;
+  font-weight: 600;
+  src: url("assets/fonts/en/BeVietnamPro-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: BeVietnamPro;
+  font-weight: 500;
+  src: url("assets/fonts/en/BeVietnamPro-Medium.ttf");
+}
+
+@font-face {
+  font-family: BeVietnamPro;
+  font-weight: 400;
+  src: url("assets/fonts/en/BeVietnamPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: BeVietnamPro;
+  font-weight: 300;
+  src: url("assets/fonts/en/BeVietnamPro-Light.ttf");
+}
+
+/********************************************   */
+//                SukhumvitSet
+
+/********************************************   */
+
+@font-face {
+  font-family: SukhumvitSet;
+  font-weight: 700;
+  src: url("assets/fonts/th/SukhumvitSet-Bold.ttf");
+}
+
+@font-face {
+  font-family: SukhumvitSet;
+  font-weight: 600;
+  src: url("assets/fonts/th/SukhumvitSet-SemiBold.ttf");
+  unicode-range: U+0E00 –u + 0e7F;
+}
+
+@font-face {
+  font-family: SukhumvitSet;
+  font-weight: 500;
+  src: url("assets/fonts/th/SukhumvitSet-Medium.ttf");
+  unicode-range: U+0E00 –u + 0e7F;
+}
+
+@font-face {
+  font-family: SukhumvitSet;
+  font-weight: 400;
+  src: url("assets/fonts/th/SukhumvitSet-Text.ttf");
+  unicode-range: U+0E00 –u + 0e7F;
+}
+
+@font-face {
+  font-family: SukhumvitSet;
+  font-weight: 300;
+  src: url("assets/fonts/th/SukhumvitSet-Light.ttf");
+  unicode-range: U+0E00 –u + 0e7F;
+}

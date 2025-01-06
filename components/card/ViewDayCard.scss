@@ -1,0 +1,87 @@
+.visit-card-component {
+  height: 200px;
+  overflow: scroll hidden;
+  border: 1px solid rgba(249 249 249 / 20%);
+
+  .m-t-25 {
+    margin-top: 25px;
+  }
+
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+    padding: 20px;
+    color: $white;
+
+    .card-button {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-start;
+
+      .btn-day {
+        height: 36px;
+        padding: 4px 15px;
+        margin-bottom: 20px;
+        color: $white;
+        background: transparent;
+        border: 1px solid rgba(249 249 249 / 20%);
+      }
+
+      .action {
+        color: $pastel-blue !important;
+        border: 1px solid $pastel-blue !important;
+      }
+
+      .icon-click {
+        width: 12px;
+        height: 9px;
+        padding-right: 5px;
+      }
+    }
+
+    .card-other {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 300px;
+      padding: 10px;
+      margin-top: -145px;
+      margin-left: 350px;
+      background: $black;
+      border: 1px solid rgba(249 249 249 / 20%);
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .text-silver {
+        color: $silver;
+      }
+
+      .card-icon {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 45px;
+          height: 45px;
+          background-color: $pastel-blue;
+
+          .icon-play {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

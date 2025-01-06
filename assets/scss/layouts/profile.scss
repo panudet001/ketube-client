@@ -1,0 +1,26 @@
+.profile-layout-container {
+  .section-header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+
+  .section-sidebar.open {
+    width: 280px;
+  }
+
+  .section-content {
+    .main-container {
+      position: relative;
+      top: 80px;
+      left: 80px;
+      width: calc(100% - 80px);
+      min-height: calc(100vh);
+
+      @media (width <= 540px) {
+        left: unset;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.group-info {
+  position: absolute;
+  bottom: 102px;
+  left: 12px;
+}
+
+.help-container {
+  position: relative;
+  width: 378px;
+  padding: 10px 20px 20px;
+  background-color: rgb(3 10 26 / 80%);
+  border-radius: 10px;
+
+  .help-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 378px;
+
+    .item-start {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      .img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    .item-end {
+      display: flex;
+      gap: 5px;
+      justify-content: flex-end;
+      width: 100%;
+      max-width: 101px;
+      padding: 5px;
+
+      .item-button {
+        display: flex;
+        align-items: center;
+        height: 28px;
+        padding: 5px;
+        background-color: rgb(253 253 253 / 40%);
+        border-radius: 5px;
+      }
+
+      .arrow-right {
+        padding: 4px;
+      }
+
+      .sound {
+        padding: 9px;
+      }
+    }
+  }
+
+  .triangle {
+    position: absolute;
+    top: 447px;
+    width: 0;
+    height: 0;
+    border-color: rgb(3 10 26 / 80%) transparent transparent transparent;
+    border-style: solid;
+    border-width: 13.9px 8px 0;
+    transform: rotate(0deg);
+  }
+}
+
+.img-help {
+  position: absolute;
+  top: 462px;
+  left: 17px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.control-main-hid {
+  opacity: 0 !important;
+  transition: opacity 1s ease;
+}

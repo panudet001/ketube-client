@@ -1,0 +1,17 @@
+@import "assets/scss/custom/color";
+
+.terms-of-use-page {
+  .wrapper-content {
+    color: $black;
+    text-align: center;
+
+    h3 {
+      margin: 40px auto 12px;
+    }
+
+    #terms-of-use {
+      margin: 50px auto 100px;
+      text-align: start;
+    }
+  }
+}

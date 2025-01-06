@@ -1,0 +1,105 @@
+.dropdown-search-component {
+  .card-dropdown-search {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    .m-tb-4 {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .icon-size {
+      font-size: 22px;
+    }
+
+    .empty-search {
+      display: flex;
+      align-items: center;
+      padding: 0 8px 4px;
+
+      .icon-search {
+        margin-right: 10px;
+        font-size: 18px;
+      }
+    }
+
+    .section-ads {
+      .ads {
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+
+        .cover-ads {
+          width: 36px;
+          height: 36px;
+          margin-right: 12px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .card-history {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 8px;
+
+      .cover-del {
+        padding-right: 4px;
+        margin-top: -5px;
+        font-size: 22px;
+        color: $purple;
+        cursor: pointer;
+      }
+    }
+
+    .dropdown-list {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 4px 8px;
+
+      .cover-music {
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .cover-icon {
+        margin-right: 12px;
+        font-size: 18px;
+      }
+
+      .dropdown-music {
+        .text-ads {
+          line-height: 20px;
+        }
+
+        .music-music {
+          line-height: 1rem;
+        }
+
+        .card-tag {
+          width: 27px;
+          height: 17px;
+          padding: 0 2px;
+          font-size: 12px;
+          font-weight: 500;
+          text-align: center;
+          background: $green;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    .bk-ads {
+      background: rgba($christalle, 50%);
+    }
+
+    .card-item {
+      margin: 0 8px;
+    }
+  }
+}

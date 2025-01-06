@@ -1,0 +1,33 @@
+.status-card-component {
+  .bg-card {
+    width: 100px;
+    height: 34px;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .waiting {
+    color: $orange;
+    background: rgba($orange, 20%);
+  }
+
+  .pending {
+    color: $blue;
+    background-color: rgba($blue, 20%);
+  }
+
+  .success {
+    color: $green;
+    background-color: rgba($green, 20%);
+  }
+
+  .error {
+    color: $red;
+    background-color: rgba($red, 20%);
+  }
+
+  .close {
+    color: $silver;
+    background-color: rgba($silver, 20%);
+  }
+}

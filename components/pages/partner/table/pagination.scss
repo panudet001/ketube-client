@@ -1,0 +1,139 @@
+.container-pagination {
+  .m-r-5 {
+    margin-right: 5px;
+  }
+
+  .card-pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px 10px;
+
+    @media (width <= 1000px) {
+      display: none;
+    }
+
+    .option-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .title {
+        @media (width <= 1000px) {
+          display: none;
+        }
+      }
+
+      .title-mobile {
+        display: none;
+
+        @media (width <= 1000px) {
+          display: block;
+        }
+      }
+
+      .form-select {
+        max-width: 70px;
+        max-height: 36px;
+      }
+    }
+
+    .pagination-item {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      .page-item {
+        height: 36px;
+        padding: 0 10px;
+        color: $white;
+        background: transparent;
+        border: 2px solid rgb(255 255 255 / 5%);
+        border-radius: 4px;
+      }
+
+      .page-item-action {
+        height: 36px;
+        padding: 0 10px;
+        color: $white;
+        background: $pastel-blue !important;
+        border: 2px solid rgb(255 255 255 / 5%);
+        border-radius: 4px;
+      }
+
+      .page-none {
+        display: none;
+      }
+    }
+  }
+
+  .card-pagination-mobile {
+    display: none;
+
+    @media (width <= 1000px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .option-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10px 10px;
+
+      .form-select {
+        max-width: 77px;
+        max-height: 36px;
+      }
+    }
+
+    .pagination-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0 10px 10px;
+
+      @media (width <= 480px) {
+        gap: 0;
+      }
+
+      .card-page {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+
+      .page-item {
+        height: 36px;
+        padding: 0 10px;
+        color: $white;
+        background: transparent;
+        border: 2px solid rgb(255 255 255 / 5%);
+        border-radius: 4px;
+
+        @media (width <= 480px) {
+          height: 30px;
+          padding: 0 7px;
+          font-size: 12px;
+        }
+      }
+
+      .page-item-action {
+        height: 36px;
+        padding: 0 10px;
+        color: $white;
+        background: $pastel-blue !important;
+        border: 2px solid rgb(255 255 255 / 5%);
+        border-radius: 4px;
+
+        @media (width <= 480px) {
+          height: 30px;
+          padding: 0 7px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.breadcrumb-component {
+  margin-top: 10px;
+
+  .breadcrumb {
+    .breadcrumb-item {
+      color: $silver;
+
+      &::before {
+        color: $silver;
+      }
+
+      &:last-child {
+        color: $white;
+      }
+
+      .menu-link {
+        &:hover {
+          color: $purple;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

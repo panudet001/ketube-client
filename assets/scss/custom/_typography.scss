@@ -1,0 +1,190 @@
+/********************************************   */
+
+/*                 TYPOGRAPHY                "/
+/ *********************************************/
+
+@mixin h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+@mixin h2 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+@mixin h3 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@mixin h4 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@mixin h5 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@mixin h6 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+@mixin h7 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@mixin h8 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@mixin font-subtitle-1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@mixin font-subtitle-2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@mixin font-subtitle-3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin font-body-1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin font-body-2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@mixin font-body-3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@mixin font-body-4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+@mixin font-button-1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@mixin font-button-2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin font-button-3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h1,
+.h1 {
+  @include h1;
+}
+
+h2,
+.h2 {
+  @include h2;
+}
+
+h3,
+.h3 {
+  @include h3;
+}
+
+h4,
+.h4 {
+  @include h4;
+}
+
+h5,
+.h5 {
+  @include h5;
+}
+
+h6,
+.h6 {
+  @include h6;
+}
+
+.h7 {
+  @include h7;
+}
+
+.h8 {
+  @include h8;
+}
+
+.font-subtitle-1 {
+  @include font-subtitle-1;
+}
+
+.font-subtitle-2 {
+  @include font-subtitle-2;
+}
+
+.font-subtitle-3 {
+  @include font-subtitle-3;
+}
+
+.font-body-1 {
+  @include font-body-1;
+}
+
+.font-body-2 {
+  @include font-body-2;
+}
+
+.font-body-3 {
+  @include font-body-3;
+}
+
+.font-body-4 {
+  @include font-body-4;
+}
+
+.font-button-1 {
+  @include font-button-1;
+}
+
+.font-button-2 {
+  @include font-button-2;
+}
+
+.font-button-3 {
+  @include font-button-3;
+}

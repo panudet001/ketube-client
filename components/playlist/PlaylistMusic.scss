@@ -1,0 +1,346 @@
+.playlist-music-components {
+  width: 100%;
+
+  .tbody {
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgb(255 255 255 / 10%);
+    }
+
+    .table-no {
+      width: 3%;
+      padding-right: 8px;
+      padding-left: 12px;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .table-music {
+      .music-group {
+        display: flex;
+        align-items: center;
+        height: 56px;
+
+        .cover-music {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          margin-right: 12px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+
+        .cover-mask {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+
+          .icon-play {
+            display: none;
+          }
+
+          &:hover {
+            background: rgb(0 0 0 / 30%);
+            border-radius: 5px;
+
+            .icon-play {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 40px;
+              height: 40px;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      .music {
+        display: flex;
+        flex-direction: column;
+
+        .music-name {
+          width: 100%;
+          max-width: 450px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          @media (width <= 1200px) {
+            max-width: 400px;
+          }
+
+          @media (width <= 740px) {
+            max-width: 350px;
+          }
+
+          @media (width <= 680px) {
+            max-width: 280px;
+          }
+
+          @media (width <= 605px) {
+            max-width: 220px;
+          }
+
+          @media (width <= 543px) {
+            max-width: 200px;
+          }
+
+          @media (width <= 460px) {
+            max-width: 150px;
+          }
+        }
+
+        .music-name-small {
+          width: 350px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          @media (width <= 1250px) {
+            width: 200px;
+          }
+
+          @media (width <= 1170px) {
+            width: 180px;
+          }
+
+          @media (width <= 1130px) {
+            width: 450px;
+          }
+
+          @media (width <= 656px) {
+            width: 350px;
+          }
+
+          @media (width <= 580px) {
+            width: 250px;
+          }
+
+          @media (width <= 460px) {
+            width: 200px;
+          }
+
+          @media (width <= 390px) {
+            width: 150px;
+          }
+        }
+
+        .music-name-no-album {
+          width: 100%;
+          max-width: 450px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          @media (width <= 1200px) {
+            max-width: 400px;
+          }
+
+          @media (width <= 656px) {
+            max-width: 350px;
+          }
+
+          @media (width <= 580px) {
+            max-width: 300px;
+          }
+
+          @media (width <= 460px) {
+            max-width: 220px;
+          }
+        }
+
+        .music-artist {
+          overflow: hidden;
+          color: $silver;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          @media (width <= 1080px) {
+            max-width: 150px;
+          }
+
+          @media (width <= 768px) {
+            max-width: 200px;
+          }
+
+          @media (width <= 560px) {
+            max-width: 100px;
+          }
+        }
+
+        .icon-verified {
+          width: 16px;
+          height: 16px;
+          margin-right: 8px;
+        }
+
+        .tooltips {
+          bottom: -35px !important;
+          margin-left: -20px !important;
+        }
+
+        .card-too-partner {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+
+          .image-too-partner {
+            width: 28px;
+            height: 28px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        .text-partner {
+          width: 100%;
+          max-width: 150px;
+          overflow: hidden;
+          color: $mauve;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .table-album {
+      width: 35%;
+      text-align: center;
+
+      @media (width <= 870px) {
+        display: none;
+      }
+
+      .music-album {
+        width: 100%;
+        max-width: 150px;
+        margin: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .table-duration {
+      width: 7%;
+      text-align: center;
+    }
+
+    .table-add {
+      position: relative;
+      width: 5%;
+      text-align: center;
+
+      @media (width <= 768px) {
+        width: 10%;
+      }
+
+      .icon-w {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .table-action {
+      position: relative;
+      width: 5%;
+      text-align: center;
+      border-radius: 0 5px 5px 0;
+
+      @media (width <= 768px) {
+        width: 10%;
+      }
+
+      .icon-w {
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      .dropdown {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        z-index: 5;
+        width: 170px !important;
+        padding: 10px 0;
+        text-align: left;
+        background: $black-russian;
+        border-radius: 10px;
+        box-shadow: 0 0 4px 0 rgb(255 255 255 / 20%);
+
+        .dropdown-item {
+          display: flex;
+          align-items: center;
+          padding: 6px 12px;
+          cursor: pointer;
+
+          .icon-album {
+            padding: 2px;
+          }
+
+          &:hover {
+            background: rgb(255 255 255 / 10%);
+          }
+
+          i {
+            margin-right: 12px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-table {
+    width: 100%;
+
+    .thead-title {
+      height: 45px;
+
+      @media (width <= 540px) {
+        display: none;
+      }
+
+      .thead-music {
+        padding-left: 52px;
+        text-align: start;
+      }
+
+      .thead-album {
+        width: 55%;
+        color: $gainsboro;
+        text-align: center;
+
+        @media (width <= 1080px) {
+          width: 50%;
+        }
+
+        @media (width <= 870px) {
+          display: none;
+        }
+      }
+
+      .thead-duration {
+        width: 100px;
+        color: $gainsboro;
+        text-align: center;
+
+        @media (width <= 880px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sub-link:hover {
+    color: $blue !important;
+  }
+}

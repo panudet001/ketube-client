@@ -1,0 +1,113 @@
+.card-playlist {
+  cursor: pointer;
+
+  .cover-body {
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    height: 50px;
+    padding: 5px 10px;
+    overflow: hidden;
+    color: $black-russian;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: $white;
+    border-radius: 0 0 5px 5px;
+  }
+
+  &:hover {
+    .cover-mask {
+      position: absolute;
+      top: 0;
+      z-index: 100px;
+      width: 180px;
+      height: 180px;
+      background-color: rgb(0 0 0 / 20%);
+      border-radius: 5px;
+    }
+
+    .cover-body {
+      background-color: rgb(255 255 255 / 90%);
+    }
+  }
+}
+
+.recommended {
+  margin-bottom: 18px;
+
+  .recommended-title {
+    margin-top: 4px;
+    overflow: hidden;
+    color: $white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .recommended-description {
+    margin-top: 5px;
+    overflow: hidden;
+    color: $silver;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.section-playlist {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+
+  @media (width <= 1080px) {
+    flex-direction: column;
+
+    .section-left {
+      width: 100%;
+    }
+  }
+
+  .section-left {
+    width: 100%;
+    max-width: 1020px;
+  }
+
+  .section-right {
+    width: 100%;
+    max-width: 180px;
+
+    @media (width <= 1080px) {
+      display: none !important;
+    }
+
+    h6 {
+      margin: 5px auto 13px;
+    }
+  }
+}
+
+.wrapper-content {
+  position: relative;
+  top: -70px;
+
+  @media (width <= 960px) {
+    top: -10px;
+  }
+
+  .section-about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 50px 0;
+
+    p {
+      color: $silver;
+    }
+  }
+
+  .image-banner {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}

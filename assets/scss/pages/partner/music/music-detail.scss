@@ -1,0 +1,183 @@
+.music-detail-components {
+  .m-t-10d {
+    margin-top: -10px;
+  }
+
+  .m-t-20 {
+    margin-top: 20px;
+  }
+
+  .section-card {
+    background: rgb(255 255 255 / 5%);
+  }
+
+  .pl-0 {
+    padding-left: 0;
+  }
+
+  .pr-0 {
+    padding-right: 0;
+  }
+
+  .text-link {
+    color: $pastel-blue;
+    cursor: pointer;
+  }
+
+  .card-component {
+    padding: 16px 24px;
+    border: 1px solid rgba(249 249 249 / 20%);
+
+    .card-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+
+      .item-title {
+        display: flex;
+        align-items: center;
+
+        .icon-title {
+          margin-right: 10px;
+          font-size: 24px;
+        }
+      }
+
+      .btn-edit {
+        display: flex;
+
+        .icon-edit {
+          margin-right: 5px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    .card-lyrics {
+      height: 302px !important;
+      padding: 20px;
+      overflow-y: scroll;
+      background: rgba(249 249 249 / 20%);
+      border: 1px solid rgba(249 249 249 / 20%);
+    }
+
+    .card-img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 290px;
+      padding: 10px;
+      border: 1px dashed rgba(249 249 249 / 20%);
+
+      .artist-image {
+        height: 100%;
+        object-fit: contain;
+        border-radius: 8px;
+      }
+    }
+
+    .card-video {
+      align-items: center;
+      width: 100%;
+      padding: 10px;
+      border: 1px dashed rgba(249 249 249 / 20%);
+    }
+
+    .card-detail {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 20px;
+
+      .icon-upload {
+        font-size: 24px;
+      }
+    }
+
+    .card-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .card-status-open {
+      width: 80px;
+      color: $malted-mint;
+      text-align: center;
+      background-color: rgba($malted-mint, 20%);
+    }
+
+    .card-status-close {
+      width: 80px;
+      color: $red;
+      text-align: center;
+      background-color: rgba($red, 20%);
+    }
+  }
+
+  .card-button {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    .btn-day {
+      padding: 10px 15px;
+      color: $white;
+      background: transparent;
+      border: 1px solid rgba(249 249 249 / 20%);
+    }
+
+    .action {
+      color: $pastel-blue !important;
+      border: 1px solid $pastel-blue !important;
+    }
+
+    .icon-click {
+      width: 12px;
+      height: 9px;
+      padding-right: 5px;
+    }
+  }
+
+  .section-chart {
+    .btn-day {
+      height: 36px;
+      padding: 4px 15px;
+      margin-bottom: 20px;
+      color: $white;
+      background: transparent;
+      border: 1px solid rgba(249 249 249 / 20%);
+    }
+
+    .action {
+      color: $pastel-blue !important;
+      border: 1px solid $pastel-blue !important;
+    }
+
+    .border-view-count {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: rgb(255 255 255 / 5%);
+      border-radius: 10px;
+
+      .border-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background-color: $pastel-blue;
+        border-radius: 5px;
+      }
+    }
+
+    .border-chart {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: rgb(255 255 255 / 5%);
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,189 @@
+.playlist-page {
+  .card-playlist {
+    cursor: pointer;
+
+    .cover-body {
+      position: absolute;
+      bottom: 0;
+      width: 180px;
+      height: 50px;
+      padding: 5px 10px;
+      overflow: hidden;
+      color: $black-russian;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background: $white;
+      border-radius: 0 0 5px 5px;
+    }
+
+    &:hover {
+      .cover-mask {
+        position: absolute;
+        top: 0;
+        z-index: 100px;
+        width: 180px;
+        height: 180px;
+        background-color: rgb(0 0 0 / 20%);
+        border-radius: 5px;
+      }
+
+      .cover-body {
+        background-color: rgb(255 255 255 / 90%);
+      }
+    }
+
+    .cart-tag {
+      position: absolute;
+      width: 33px;
+      height: 21px;
+      padding: 2px;
+      margin-top: 155px;
+      margin-left: 142px;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      background: $green;
+      border-radius: 3px;
+    }
+  }
+
+  .recommended {
+    position: relative;
+    margin-bottom: 18px;
+
+    .recommended-title {
+      margin-top: 4px;
+      overflow: hidden;
+      color: $white;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      .dropdown-album-container {
+        .icon-w {
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        .dropdown {
+          position: absolute;
+          top: 205px;
+          right: 0;
+          z-index: 1;
+          width: 173px !important;
+          padding: 8px 0;
+          text-align: left;
+          background: $black-russian;
+          border: 1px solid $bunker;
+          border-radius: 10px;
+
+          li {
+            list-style-type: none;
+
+            .dropdown-item {
+              display: flex;
+              align-items: center;
+              padding: 6px 12px;
+              cursor: pointer;
+
+              .icon-list {
+                margin-right: 12px;
+              }
+
+              .icon-menu {
+                font-size: 14px;
+              }
+
+              &:hover {
+                background: rgb(255 255 255 / 10%);
+              }
+
+              i {
+                margin-right: 12px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .recommended-description {
+      display: -webkit-box;
+      max-width: 180px;
+      margin-top: 5px;
+      overflow: hidden;
+      color: $silver;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .section-playlist {
+    display: flex;
+    gap: 48px;
+    width: 100%;
+
+    @media (width <= 1080px) {
+      flex-direction: column;
+
+      .section-left {
+        width: 100%;
+      }
+    }
+
+    .section-left {
+      width: 100%;
+      max-width: 1020px;
+    }
+
+    .section-right {
+      width: 100%;
+      max-width: 180px;
+
+      @media (width <= 1080px) {
+        display: none !important;
+      }
+
+      h6 {
+        margin: 5px auto 13px;
+      }
+    }
+  }
+
+  .wrapper-content {
+    position: relative;
+    top: -70px;
+
+    @media (width <= 960px) {
+      top: -10px;
+    }
+
+    .section-about {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      margin: 50px 0;
+
+      p {
+        color: $silver;
+      }
+    }
+
+    .card-about {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 100px;
+    }
+
+    .image-banner {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}

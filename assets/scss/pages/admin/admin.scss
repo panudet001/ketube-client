@@ -1,0 +1,71 @@
+.layout-container-admin {
+  position: relative;
+  width: 100%;
+
+  .section-content {
+    .container-error {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 64px;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      margin: 150px auto 400px;
+
+      .card-item {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        width: 100%;
+
+        .logo {
+          @media (width <= 500px) {
+            width: 100% !important;
+            padding: 20px;
+          }
+        }
+
+        h1 {
+          font-size: 150px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          text-transform: capitalize;
+          letter-spacing: -3px;
+        }
+
+        .section-form {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          width: 100%;
+
+          @media (width <= 500px) {
+            width: 400px !important;
+          }
+
+          @media (width <= 430px) {
+            width: 350px !important;
+          }
+
+          .form-control-rounded-normal {
+            width: 450px !important;
+
+            @media (width <= 500px) {
+              width: 400px !important;
+            }
+
+            @media (width <= 430px) {
+              width: 350px !important;
+            }
+          }
+
+          .text-error {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

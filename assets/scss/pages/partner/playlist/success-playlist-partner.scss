@@ -1,0 +1,31 @@
+.success-playlist-partner-page {
+  margin-top: 120px;
+
+  .section-success {
+    text-align: center;
+
+    .bg-playlist-success {
+      .check-success {
+        width: 100%;
+        max-width: 336px;
+
+        @media (width <= 375px) {
+          max-width: 230px;
+        }
+      }
+    }
+
+    h3 {
+      margin-top: 24px;
+    }
+
+    .btn-outline-primary {
+      padding: 8px 123px;
+      margin-top: 30px;
+
+      @media (width <= 375px) {
+        padding: 8px 80px;
+      }
+    }
+  }
+}

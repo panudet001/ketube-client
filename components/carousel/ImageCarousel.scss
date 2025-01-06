@@ -1,0 +1,45 @@
+.image-carousel-component {
+  width: 100%;
+
+  .slider-image {
+    height: 100%;
+
+    .slick-list {
+      padding: 0 !important;
+
+      .slider-items {
+        padding: 0 7px;
+        border-radius: 10px;
+        outline: none;
+
+        img {
+          flex-shrink: 0;
+          width: 638px;
+          height: 342px;
+          object-fit: cover;
+
+          @media only screen and (width <= 680px) {
+            width: 278px;
+            height: 148px;
+          }
+        }
+      }
+
+      .slick-slide {
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.5;
+        transition: 0.4s;
+        transform: scale(0.8);
+      }
+
+      .slick-active {
+        height: 100%;
+        border-radius: 10px;
+        opacity: 1;
+        transition: 0.4s;
+        transform: scale(1);
+      }
+    }
+  }
+}

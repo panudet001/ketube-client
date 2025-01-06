@@ -1,0 +1,78 @@
+.cookie-component {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 469px;
+  height: 222px;
+  padding: 16px 32px;
+  margin: 10px;
+  background-color: $victoria;
+  border-radius: 20px;
+
+  .header-cookie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .img-cookie {
+      width: 50px;
+      height: 50px;
+      margin-right: 24px;
+    }
+
+    .title-cookie {
+      width: 100%;
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+
+  .description-cookie {
+    margin-bottom: 10px;
+  }
+
+  .cookie-action {
+    display: flex;
+    gap: 12px;
+
+    .btn-outline-third {
+      width: 196.5px;
+      height: 44px;
+    }
+
+    .btn-outline-primary {
+      width: 196.5px;
+      height: 44px;
+    }
+  }
+
+  @media (width <= 540px) {
+    width: 300px;
+    height: 200px;
+
+    .header-cookie {
+      .img-cookie {
+        width: 40px;
+        height: 40px;
+        margin-right: 18px;
+      }
+
+      .title-cookie {
+        font-size: 26px;
+      }
+    }
+
+    .description-cookie {
+      display: -webkit-box;
+      width: 100%;
+      height: 3.9em;
+      margin-bottom: 15px;
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 1.3em;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+  }
+}

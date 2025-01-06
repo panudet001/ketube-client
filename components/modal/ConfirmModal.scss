@@ -1,0 +1,55 @@
+.confirm-modal-component {
+  .modal-content {
+    padding: 10px 0;
+    background: $black-russian;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgb(255 255 255 / 20%);
+
+    .m-t-10 {
+      margin-top: 10px;
+    }
+
+    .m-r-10 {
+      margin-right: 10px;
+    }
+
+    .modal-header {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .no-border {
+      border: 1px solid transparent !important;
+    }
+
+    .item-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      height: 200px;
+      margin-top: 10px;
+      overflow-x: scroll;
+    }
+
+    .image-artist {
+      width: 60px;
+      height: 60px;
+    }
+
+    .item-card {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .btn-cancel {
+      color: $white;
+    }
+
+    .btn-cancel:active {
+      border: 1px solid transparent;
+    }
+  }
+}

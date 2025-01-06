@@ -1,0 +1,128 @@
+.detail-album-partner-page {
+  margin-top: 80px;
+
+  .section-detail-album {
+    padding: 16px 24px;
+    background: rgb(255 255 255 / 5%);
+    border: 1px solid rgb(224 224 224 / 20%);
+    border-radius: 10px;
+
+    .head-id,
+    .head-album,
+    .head-artist,
+    .head-genre,
+    .head-status,
+    .head-description {
+      color: $gainsboro;
+    }
+
+    .title-artist {
+      color: $pastel-blue;
+    }
+
+    .status-playlist-success {
+      width: fit-content;
+      height: auto;
+      padding: 3px 16px;
+      color: rgb(20 222 185 / 100%);
+      background-color: rgb(20 222 185 / 20%);
+      border-radius: 4px;
+    }
+
+    .status-playlist-danger {
+      width: fit-content;
+      height: auto;
+      padding: 3px 16px;
+      color: rgb(250 137 107 / 100%);
+      background-color: rgb(250 137 107 / 20%);
+      border-radius: 4px;
+    }
+
+    .description {
+      padding: 10px;
+      background-color: rgb(255 255 255 / 5%);
+      border-radius: 5px;
+    }
+
+    .border-cover-album {
+      width: fit-content;
+      height: fit-content;
+      padding: 16px 12px;
+      margin-bottom: 15px;
+      border: 1px dashed rgb(88 88 88 / 100%);
+      border-radius: 8px;
+
+      .thumbnail-album {
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .cover-album {
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+
+    .head-create,
+    .head-create-date,
+    .head-update-date,
+    .head-update {
+      color: $gainsboro;
+    }
+
+    .title-create,
+    .title-update {
+      color: $white;
+    }
+  }
+
+  .section-chart-album {
+    padding: 16px 24px;
+    margin-top: 10px;
+    background: rgb(255 255 255 / 5%);
+    border: 1px solid rgb(224 224 224 / 20%);
+    border-radius: 10px;
+
+    .btn-day {
+      height: 36px;
+      padding: 4px 15px;
+      margin-bottom: 20px;
+      color: $white;
+      background: transparent;
+      border: 1px solid rgba(249 249 249 / 20%);
+    }
+
+    .action {
+      color: $pastel-blue !important;
+      border: 1px solid $pastel-blue !important;
+    }
+
+    .border-view-count {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: rgb(255 255 255 / 5%);
+      border-radius: 10px;
+
+      .border-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background-color: $pastel-blue;
+        border-radius: 5px;
+      }
+    }
+
+    .border-chart {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: rgb(255 255 255 / 5%);
+      border-radius: 10px;
+    }
+  }
+}

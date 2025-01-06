@@ -1,0 +1,437 @@
+/********************************************   */
+//                BUTTON SOLID
+
+/********************************************   */
+
+.btn-solid-primary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 45px;
+  padding: 10px 13px;
+  background: $nero !important;
+  border-radius: 40px;
+  box-shadow: 0 0 4px 0 rgb(169 116 255 / 50%);
+
+  &:hover {
+    background: $bunker !important;
+    box-shadow: 0 0 10px 0 rgb(169 116 255 / 70%);
+  }
+
+  &:focus {
+    background: $bunker !important;
+    box-shadow: 0 0 4px 0 rgb(169 116 255 / 50%);
+  }
+
+  &:active {
+    border-color: transparent !important;
+  }
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  > a,
+  p,
+  span,
+  div {
+    @include font-body-2;
+
+    letter-spacing: -0.32px;
+    background: linear-gradient(
+      91deg,
+      $medium-purple -6.74%,
+      $perano 50.43%,
+      $pastel-blue 104.14%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.btn-solid-secondary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 45px;
+  padding: 10px 13px;
+  color: $white;
+  background: $cloud-burst !important;
+  border: none;
+  border-radius: 40px;
+
+  @include font-body-2;
+
+  &:hover {
+    color: $white !important;
+    background: $tuna !important;
+  }
+
+  &:focus {
+    color: $cloud-burst !important;
+    background: $white !important;
+  }
+
+  &:active {
+    font-weight: 400 !important;
+    color: $cloud-burst !important;
+    background: $white !important;
+  }
+
+  > a,
+  p,
+  span {
+    color: $white;
+
+    @include font-body-2;
+  }
+}
+
+/********************************************   */
+//               BUTTON OUTLINE
+
+/********************************************   */
+
+.btn-outline-primary {
+  position: relative;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 45px;
+  padding: 10px 13px;
+  color: $white;
+  border: none;
+  border-radius: 40px;
+
+  @include font-body-2;
+
+  &:hover {
+    background: rgb(255 255 255 / 10%);
+    border-color: transparent;
+    box-shadow: 0 0 10px 0 rgb(255 255 255 / 40%);
+  }
+
+  &:focus {
+    background: rgb(255 255 255 / 10%);
+    box-shadow: none;
+  }
+
+  &:active {
+    background: rgb(255 255 255 / 15%) !important;
+    box-shadow: none;
+  }
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  > a,
+  p,
+  span {
+    color: $white;
+
+    @include font-body-2;
+  }
+}
+
+.btn-outline-primary::before {
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  content: "";
+  background: linear-gradient(
+    286deg,
+    $cornflower-blue,
+    $glowing-purple,
+    $red-violet,
+    $salmon
+  );
+  border-radius: 40px;
+  mask:
+    linear-gradient($white 0 0) content-box,
+    linear-gradient($white 0 0);
+  mask-composite: xor;
+}
+
+.btn-outline-secondary {
+  position: relative;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 45px;
+  padding: 10px 13px;
+  color: $white;
+  border: none;
+  border-radius: 40px;
+
+  @include font-body-2;
+
+  &:hover {
+    background: rgb(255 255 255 / 10%);
+    box-shadow: 0 0 4px 0 rgb(255 255 255 / 40%);
+  }
+
+  &:focus {
+    background: rgb(255 255 255 / 10%);
+    box-shadow: none;
+  }
+
+  &:active {
+    background: rgb(255 255 255 / 15%) !important;
+    box-shadow: none;
+  }
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  > a,
+  p,
+  span {
+    color: $white;
+
+    @include font-body-2;
+  }
+}
+
+.btn-outline-secondary::before {
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  content: "";
+  background: linear-gradient(300deg, $electric-indigo, $blue-violet);
+  border-radius: 40px;
+  mask:
+    linear-gradient($white 0 0) content-box,
+    linear-gradient($white 0 0);
+  mask-composite: xor;
+}
+
+.btn-outline-third {
+  position: relative;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 45px;
+  padding: 10px 13px;
+  color: $white;
+  background: transparent;
+  border: 1px solid $silver;
+  border-radius: 40px;
+
+  @include font-body-2;
+
+  &:hover {
+    background: rgb(255 255 255 / 5%);
+    border: 1px solid $silver;
+    box-shadow: 0 0 4px 0 rgb(255 255 255 / 50%);
+  }
+
+  &:focus {
+    background: rgb(255 255 255 / 10%);
+    box-shadow: none;
+  }
+
+  &:active {
+    background: rgb(255 255 255 / 15%) !important;
+    box-shadow: none;
+  }
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  > a,
+  p,
+  span {
+    color: $white;
+
+    @include font-body-2;
+  }
+}
+
+/********************************************   */
+//               BUTTON ICON
+
+/********************************************   */
+
+.btn-icon {
+  padding: 0;
+  border: none;
+}
+
+/********************************************   */
+//               BUTTON VIEW ALL
+
+/********************************************   */
+
+.btn-view-all {
+  position: relative;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 45px;
+  padding: 0 20px;
+  color: $white;
+  border: 1px solid $tuna;
+  border-radius: 50px;
+
+  @include font-body-2;
+
+  &:hover {
+    color: $mauve;
+    border: 1px solid $tuna;
+  }
+
+  &:focus {
+    background: rgb(255 255 255 / 10%);
+    box-shadow: none;
+  }
+
+  &:active {
+    background: rgb(255 255 255 / 15%) !important;
+    box-shadow: none;
+  }
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  > a,
+  p,
+  span {
+    color: $white;
+
+    @include font-body-2;
+  }
+}
+
+/********************************************   */
+//       BUTTON PARTNER SOLID PRIMARY
+
+/********************************************   */
+
+.btn-partner-solid-primary {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 36px;
+  padding: 6px 16px;
+  color: $white;
+  background: $pastel-blue !important;
+  border-radius: 4px;
+
+  &:hover {
+    background: $pastel-blue !important;
+  }
+
+  &:focus {
+    background: $pastel-blue !important;
+  }
+
+  &:active {
+    border-color: transparent !important;
+  }
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  > a,
+  p,
+  span,
+  div {
+    @include font-body-2;
+
+    letter-spacing: -0.32px;
+    background: linear-gradient(
+      91deg,
+      $medium-purple -6.74%,
+      $perano 50.43%,
+      $pastel-blue 104.14%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  > .las {
+    font-size: 20px;
+  }
+}
+
+/********************************************   */
+//               BUTTON OUTLINE
+
+/********************************************   */
+
+.btn-partner-outline-primary {
+  position: relative;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 36px;
+  padding: 8px;
+  color: $white;
+  background: rgb(255 255 255 / 5%);
+  border: none;
+  border: 1px solid rgb(249 249 249 / 20%);
+  border-radius: 3px;
+
+  @include font-body-2;
+
+  &:hover {
+    background: rgb(255 255 255 / 10%);
+    border-color: transparent;
+  }
+
+  &:focus {
+    background: rgb(255 255 255 / 10%);
+    border: 1px solid rgb(249 249 249 / 20%) !important;
+    box-shadow: none;
+  }
+
+  &:active {
+    background: rgb(255 255 255 / 15%) !important;
+    border: 1px solid rgb(249 249 249 / 20%) !important;
+    box-shadow: none;
+  }
+
+  > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  > a,
+  p,
+  span {
+    color: $white;
+
+    @include font-body-2;
+  }
+
+  > .las {
+    font-size: 20px;
+  }
+}

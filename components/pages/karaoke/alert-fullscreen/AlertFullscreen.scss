@@ -1,0 +1,18 @@
+.alert-container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 100%;
+  max-width: 268px;
+  height: 46px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgb(3 10 26 / 80%);
+  border-radius: 10px;
+  transform: translateX(-50%);
+}
+
+.alert-container-hid {
+  opacity: 0 !important;
+  transition: opacity 1s ease;
+}

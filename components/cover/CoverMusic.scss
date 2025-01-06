@@ -1,0 +1,222 @@
+.cover-music-component {
+  .bg-cover-music {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    left: -80px;
+    z-index: 0;
+    width: calc(100% + 80px);
+    height: 460px;
+    filter: blur(5px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-blur {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    left: -80px;
+    z-index: 0;
+    width: calc(100% + 80px);
+    height: 460px;
+    background-color: rgb(0 0 0 / 40%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .header-cover-music {
+    position: relative;
+    top: -80px;
+    right: 0;
+    left: -80px;
+    z-index: 0;
+    width: calc(100% + 80px);
+    height: 460px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (width <= 960px) {
+      height: 400px;
+    }
+
+    .wrapper-cover-music {
+      position: absolute;
+      left: 80px;
+      display: flex;
+      justify-content: center;
+      width: calc(100% - 80px);
+
+      .section-cover-music {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+        height: 280px;
+        padding: 0 16px;
+        margin-top: 100px;
+
+        .cover-music-left {
+          width: 100%;
+          max-width: 616px;
+
+          .cover-music-title-heading {
+            margin-bottom: 15px;
+            color: $lightning-yellow;
+            text-shadow: 0 0 4px rgb(241 220 151 / 50%);
+          }
+
+          .cover-music-title {
+            margin: 0 0 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .cover-sub-title {
+            max-width: 550px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .cover-description {
+            display: -webkit-box;
+            max-width: 550px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+
+            .text-description {
+              display: -webkit-box;
+              max-width: 550px;
+              overflow: hidden;
+              color: $silver;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+
+            .text-more {
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+
+          .button-action {
+            display: flex;
+            column-gap: 10px;
+
+            .btn-outline-third {
+              height: 44px;
+              padding: 8px 30px;
+            }
+
+            i {
+              font-size: 24px;
+            }
+
+            .share-icon {
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          .card-dropdown {
+            position: absolute;
+
+            .btn-all {
+              display: flex;
+              align-items: center;
+              padding: 8px 20px;
+              color: $white;
+              border: 1px solid $white;
+              border-radius: 40px;
+
+              .icon-add {
+                font-size: 24px;
+              }
+            }
+
+            ul {
+              list-style-type: none;
+            }
+
+            .dropdown {
+              position: absolute;
+              top: 0;
+              z-index: 1;
+              width: 173px !important;
+              padding: 8px 0;
+              margin-left: 80px;
+              text-align: left;
+              background-color: black;
+              border: 1px solid rgb(249 249 249 / 20%);
+              border-radius: 10px;
+            }
+          }
+        }
+
+        @media (width <= 616px) {
+          height: fit-content;
+
+          .cover-music-left {
+            .cover-music-title {
+              max-width: 300px;
+            }
+
+            .cover-sub-title {
+              max-width: 300px;
+            }
+          }
+        }
+
+        .cover-music-right {
+          @media (width <= 960px) {
+            display: none;
+          }
+
+          .cover-music-image {
+            position: relative;
+            width: 216px;
+            height: 270px;
+
+            .cover-image {
+              width: 216px;
+              height: 270px;
+              object-fit: cover;
+              border-radius: 20px;
+            }
+
+            .cover-image-title {
+              position: absolute;
+              bottom: 0;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              height: 55px;
+              padding: 10px;
+              background: $white;
+              border-radius: 0 0 20px 20px;
+
+              .cover-name {
+                width: 216px;
+                overflow: hidden;
+                color: $black-russian;
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

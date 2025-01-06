@@ -1,0 +1,147 @@
+@import "assets/scss/custom/typography";
+
+.profile-page {
+  max-width: 980px;
+  margin: auto;
+
+  .wrapper-content {
+    padding: 10px;
+    margin-top: 50px;
+    background-color: rgb(255 255 255 / 5%);
+    border-radius: 10px;
+
+    .card-item-profile {
+      padding: 20px;
+      border: 1px solid rgb(224 224 224 / 20%);
+      border-radius: 10px;
+
+      .nav {
+        min-width: 100%;
+        margin-top: 30px;
+        border-bottom: 1px solid $tuna;
+
+        .nav-link.active {
+          color: $white !important;
+          background: transparent;
+          border-bottom: 2px solid $blue !important;
+          border-radius: 0;
+        }
+
+        .nav-link {
+          padding: 10px 20px;
+          border-color: transparent;
+        }
+      }
+
+      .tab-content {
+        margin: auto;
+
+        .form-profile {
+          width: 100%;
+
+          .m-t-50 {
+            margin-top: 50px;
+          }
+
+          .img-profile {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            padding-bottom: 15px;
+            margin: auto;
+            text-align: center;
+            cursor: pointer;
+            background: transparent;
+            border-radius: 150px;
+
+            .mask-cover {
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              display: none;
+              width: 150px;
+              height: 150px;
+              background: $black;
+              border-radius: 150px;
+              opacity: 0.4;
+            }
+
+            .cover-profile {
+              width: 150px;
+              height: 150px;
+              cursor: pointer;
+              object-fit: cover;
+              background: transparent;
+              border-radius: 150px;
+            }
+
+            span {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              left: 0;
+              display: none;
+              margin-right: auto;
+              margin-left: auto;
+              font-size: 40px;
+              border-radius: 150px;
+              opacity: 1 !important;
+              transform: translate(0, -50%);
+            }
+
+            &:hover {
+              .mask-cover {
+                display: block;
+              }
+
+              span {
+                display: block;
+              }
+            }
+          }
+
+          .icon-edit {
+            font-size: 24px;
+          }
+
+          .m-t-15 {
+            margin-top: 15px;
+          }
+
+          .form-body {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            padding-top: 30px;
+
+            .title-member {
+              .text-position {
+                color: $mauve;
+              }
+            }
+
+            .btn-outline-primary {
+              @include font-subtitle-3;
+            }
+          }
+
+          .form-footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px 20px;
+            margin-top: 10px;
+
+            @media (width <= 600px) {
+              flex-direction: column;
+              gap: 10px;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

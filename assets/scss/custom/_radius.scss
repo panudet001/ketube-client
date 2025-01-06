@@ -1,0 +1,24 @@
+/********************************************   */
+//                   RADIUS
+
+/********************************************   */
+
+.rounded {
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.rounded-normal {
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.rounded-medium {
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 25%);
+}
+
+.rounded-large {
+  border-radius: 40px;
+  box-shadow: 2px 2px 4px 0 rgb(0 0 0 / 25%);
+}

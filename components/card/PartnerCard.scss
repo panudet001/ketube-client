@@ -1,0 +1,60 @@
+.container-partner {
+  .tooltips-container {
+    cursor: pointer;
+
+    .card-partner {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-verified {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    .text-partner {
+      width: 155px;
+      margin-top: 2px;
+      overflow: hidden;
+      color: $mauve;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      @media (width <= 540px) {
+        width: 135px;
+      }
+    }
+
+    .tooltip-hover {
+      position: absolute;
+      bottom: -40px;
+      z-index: 1;
+      width: max-content;
+      padding: 8px;
+      margin-left: 20px;
+      visibility: hidden;
+      background-color: $cloud-burst;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      .tooltips {
+        visibility: visible;
+      }
+    }
+
+    .card-too-partner {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+      .image-partner {
+        width: 28px;
+        height: 28px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}

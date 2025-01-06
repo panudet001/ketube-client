@@ -1,0 +1,33 @@
+.checkbox-list-component {
+  .permission-title {
+    margin: 20px 0 0;
+
+    .form-check-label {
+      display: none;
+    }
+
+    .section-checkbox-list {
+      display: flex;
+    }
+
+    @media (width <= 767px) {
+      .permission-subtitle {
+        margin-bottom: 15px;
+      }
+
+      .checkbox-view,
+      .checkbox-create,
+      .checkbox-edit,
+      .checkbox-delete {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin: 0 !important;
+
+        .form-check-label {
+          display: block;
+        }
+      }
+    }
+  }
+}

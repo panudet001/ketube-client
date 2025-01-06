@@ -1,0 +1,28 @@
+.explore-page {
+  .section-category {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slider-content {
+      display: flex;
+      column-gap: 15px;
+
+      .btn-solid-secondary {
+        width: max-content;
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    margin: 0 auto 50px;
+    border: 1px solid $eclipse;
+    opacity: 1;
+  }
+}

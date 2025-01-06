@@ -1,0 +1,43 @@
+.cover-info-component {
+  .header-cover-info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media (width <= 540px) {
+      padding: 0 20px;
+    }
+
+    .cover-title-heading {
+      margin-bottom: 20px;
+      color: $lightning-yellow;
+      text-align: center;
+      text-shadow: 0 0 4px rgb(241 220 151 / 50%);
+    }
+
+    .space {
+      margin: auto auto 35px !important;
+    }
+
+    .cover-title {
+      margin: auto auto 20px;
+      line-height: inherit;
+      text-align: center;
+      background: linear-gradient(180deg, $white 0%, $mauve 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .cover-description {
+      width: 100%;
+      max-width: 589px;
+      margin: auto auto 20px;
+      color: $moon-raker;
+      text-align: center;
+    }
+
+    .cover-date {
+      color: $gainsboro;
+      text-align: center;
+    }
+  }
+}

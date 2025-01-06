@@ -1,0 +1,133 @@
+.table-partner-team-management-component {
+  .card-table {
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;
+
+    .text-link {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    .data-table {
+      width: 100%;
+
+      th {
+        padding: 12px 8px;
+        background: rgb(255 255 255 / 5%);
+
+        .icon-sort {
+          cursor: pointer;
+        }
+      }
+
+      td {
+        padding: 12px 8px;
+
+        .icon-action {
+          font-size: 20px;
+        }
+      }
+
+      .card-image {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .show-image {
+          width: 37px;
+          height: 37px;
+        }
+      }
+
+      @media (width <= 900px) {
+        display: none;
+      }
+    }
+
+    .data-table-mobile {
+      display: none;
+
+      .rounded-normal {
+        box-shadow: none;
+      }
+
+      .card-body {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        background: rgb(255 255 255 / 5%);
+
+        .show-image {
+          width: 76px;
+          height: 76px;
+        }
+
+        .card-item {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+
+          @media (width <= 400px) {
+            width: 100%;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      @media (width <= 900px) {
+        display: block;
+      }
+    }
+
+    .card-pagination {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .option-item {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .form-select {
+          max-width: 77px;
+          max-height: 36px;
+        }
+
+        @media (width <= 900px) {
+          display: none;
+        }
+      }
+
+      .pagination-item {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        .page-item {
+          height: 36px;
+          padding: 0 10px;
+          color: $white;
+          background: transparent;
+          border: 2px solid rgb(255 255 255 / 5%);
+          border-radius: 4px;
+        }
+
+        .page-item-action {
+          height: 36px;
+          padding: 0 10px;
+          color: $white;
+          background: $pastel-blue !important;
+          border: 2px solid rgb(255 255 255 / 5%);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

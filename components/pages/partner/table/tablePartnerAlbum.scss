@@ -1,0 +1,202 @@
+.table-album-component {
+  .card-table {
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;
+
+    .text-link {
+      width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      @media (width <= 1000px) {
+        text-align: start;
+      }
+    }
+
+    .la-arrow-up,
+    .la-arrow-down {
+      color: $silver;
+    }
+
+    .action-sort-by {
+      color: $white;
+    }
+
+    .cursor {
+      cursor: pointer;
+    }
+
+    .data-table {
+      width: 100%;
+
+      th {
+        padding: 12px 8px;
+        text-align: start;
+        background: rgb(255 255 255 / 5%);
+      }
+
+      td {
+        padding: 12px 8px;
+        text-align: start;
+      }
+
+      .updated-by {
+        min-width: 100px;
+      }
+
+      .updated-at {
+        min-width: 200px;
+      }
+
+      .view-count,
+      .view-music-count {
+        min-width: 130px;
+      }
+
+      .card-image {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .show-image {
+          width: 37px;
+          height: 37px;
+          object-fit: cover;
+        }
+      }
+
+      .text-link {
+        width: 200px;
+        overflow: hidden;
+        color: $pastel-blue;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      .text-artist {
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      @media (width <= 1000px) {
+        display: none;
+      }
+    }
+
+    .data-table-mobile {
+      display: none;
+
+      .card-body {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(255 255 255 / 5%);
+
+        .show-image {
+          width: 76px;
+          height: 76px;
+          object-fit: cover;
+        }
+
+        .card-item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          .text-link {
+            width: 500px;
+            overflow: hidden;
+            color: $pastel-blue;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+
+            @media (width <= 950px) {
+              text-align: start;
+            }
+
+            @media (width <= 820px) {
+              width: 400px;
+            }
+
+            @media (width <= 700px) {
+              width: 300px;
+            }
+
+            @media (width <= 600px) {
+              width: 250px;
+            }
+
+            @media (width <= 470px) {
+              width: 150px;
+            }
+          }
+
+          .item-artist {
+            width: 500px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            @media (width <= 950px) {
+              text-align: start;
+            }
+
+            @media (width <= 820px) {
+              width: 400px;
+            }
+
+            @media (width <= 700px) {
+              width: 300px;
+            }
+
+            @media (width <= 600px) {
+              width: 250px;
+            }
+
+            @media (width <= 470px) {
+              width: 150px;
+            }
+
+            @media (width <= 400px) {
+              font-size: 12px;
+            }
+          }
+
+          .item-detail {
+            text-align: start;
+
+            @media (width <= 400px) {
+              font-size: 12px;
+            }
+          }
+
+          .dot {
+            padding: 0 5px;
+          }
+        }
+      }
+
+      @media (width <= 1000px) {
+        display: block;
+
+        .card-item {
+          align-items: flex-start;
+        }
+      }
+    }
+
+    .empty-mobile {
+      @media (width >= 1000px) {
+        display: none;
+      }
+    }
+  }
+}

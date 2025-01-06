@@ -1,0 +1,226 @@
+.karaoke-search {
+  .group-search {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    max-width: 378px;
+    height: 27px;
+    margin: 10px 0;
+    overflow-x: auto;
+
+    .group-button {
+      width: 83px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      color: $white;
+      letter-spacing: 0.07px;
+      background: $cloud-burst;
+      border: transparent;
+      border-radius: 40px;
+
+      @media screen and (width <= 850px) {
+        font-size: 12px;
+      }
+    }
+
+    .group-active {
+      color: $black;
+      background: $white;
+    }
+  }
+
+  .karaoke-container {
+    width: 100%;
+    height: 451px;
+    overflow-y: auto;
+
+    .karaoke-link {
+      display: contents;
+    }
+
+    .que-not {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 50%;
+
+      .img {
+        width: 80px;
+        height: 80px;
+      }
+
+      @media screen and (width <= 850px) {
+        margin-top: 25%;
+      }
+    }
+
+    .karaoke-item {
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+      width: 100%;
+      max-width: 338px;
+      height: 60px;
+      margin: 10px 0;
+
+      @media screen and (width <= 850px) {
+        max-width: 100%;
+      }
+    }
+
+    .icon-up {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .karaoke-image {
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      margin-right: 16px;
+      margin-left: 12px;
+      cursor: pointer;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    .karaoke-image-pl {
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      margin-right: 16px;
+      margin-left: 24px;
+      cursor: pointer;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    .karaoke-image-at {
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      margin-right: 16px;
+      margin-left: 24px;
+      cursor: pointer;
+      object-fit: cover;
+      border-radius: 50px;
+    }
+
+    .karaoke-warp {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      cursor: pointer;
+
+      .karaoke-detail {
+        .karaoke-name {
+          width: 100%;
+          max-width: 187px;
+          overflow: hidden;
+          font-weight: 300;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          @media screen and (width <= 850px) {
+            max-width: 180px;
+          }
+
+          @media screen and (width <= 650px) {
+            max-width: 165px;
+          }
+
+          @media screen and (width <= 600px) {
+            max-width: 165px;
+          }
+
+          @media screen and (width <= 400px) {
+            max-width: 142px;
+          }
+        }
+
+        .mauve {
+          color: $mauve;
+        }
+
+        .karaoke-artists {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+
+      .karaoke-setting {
+        position: relative;
+
+        ul {
+          list-style-type: none;
+        }
+
+        .i {
+          cursor: pointer;
+        }
+
+        .icon-card {
+          display: flex;
+          align-items: center;
+        }
+
+        .icon-item {
+          width: 14px;
+          height: 14px;
+          margin-right: 12px;
+        }
+
+        .icon-menu {
+          margin-right: 12px;
+          font-size: 14px;
+        }
+
+        .dropdown {
+          position: absolute;
+          top: 22px;
+          right: 0;
+          z-index: 1;
+          width: 170px !important;
+          padding: 8px 0;
+          font-size: 12px;
+          text-align: left;
+          background: $black-russian;
+          border-radius: 5px;
+          box-shadow: 0 0 4px 0 rgb(255 255 255 / 20%);
+
+          .dropdown-item {
+            padding: 6px 12px;
+            cursor: pointer;
+
+            &:hover {
+              background: rgb(255 255 255 / 10%);
+            }
+
+            i {
+              margin-right: 12px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (width <= 850px) {
+      height: 243px;
+    }
+  }
+
+  .navigator-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+    max-width: 338px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+}

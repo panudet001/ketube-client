@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Expand">
+<mask id="mask0_9841_556" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+<rect id="Bounding box" width="32" height="32" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_9841_556)">
+<g id="ico-fullscreen">
+<path d="M26.6663 5.33331H18.6663V7.99998H23.9997V13.3333H26.6663V5.33331Z" fill="white"/>
+<path d="M26.6663 18.6666H23.9997V24H18.6663V26.6666H26.6663V18.6666Z" fill="white"/>
+<path d="M7.99967 13.3333V7.99998H13.333V5.33331H5.33301V13.3333H7.99967Z" fill="white"/>
+<path d="M5.33301 18.6666V26.6666H13.333V24H7.99967V18.6666H5.33301Z" fill="white"/>
+</g>
+</g>
+</g>
+</svg>

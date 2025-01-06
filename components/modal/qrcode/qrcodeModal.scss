@@ -1,0 +1,110 @@
+.modal-dialog {
+  max-width: 640px;
+}
+
+.gen-qrcode-component {
+  .text-title {
+    color: $black;
+  }
+
+  .btn-cancel {
+    color: $white;
+    background-color: $red;
+  }
+
+  .btn-cancel:active {
+    border: 1px solid transparent;
+  }
+}
+
+.modal-content {
+  background-color: $cloud-burst;
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 12px;
+    text-align: center;
+    border-bottom: none;
+
+    .start {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+      .modal-text {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.12px;
+      }
+    }
+
+    .img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+#qe-code-modal {
+  backdrop-filter: blur(2px);
+}
+
+.modal-body {
+  padding: 0 24px 24px;
+
+  .text-size-14 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .text-title {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+    letter-spacing: 0.08px;
+  }
+
+  .text-title-start {
+    text-align: start;
+  }
+
+  .qr-code {
+    width: 100%;
+    text-align: center;
+
+    .qrcode-vue {
+      padding: 16px;
+    }
+  }
+
+  .btn {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 4px 8px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .center {
+    display: block;
+    margin-top: 16px;
+    text-align: -webkit-center;
+    unicode-bidi: isolate;
+  }
+
+  .info {
+    color: $pastel-blue;
+    border-color: $pastel-blue;
+  }
+}

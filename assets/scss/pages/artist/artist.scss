@@ -1,0 +1,211 @@
+.artist-page {
+  .wrapper-content {
+    position: relative;
+    top: -70px;
+
+    @media (width <= 960px) {
+      top: -10px;
+    }
+
+    .m-t-50 {
+      margin-top: 50px;
+    }
+
+    .artist-container {
+      display: flex;
+      flex-direction: column;
+      margin: 24px 0;
+
+      .artist-new {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+        width: 100%;
+
+        .new-card {
+          display: flex;
+          gap: 12px;
+          align-items: flex-start;
+          justify-content: center;
+
+          .bk-img {
+            display: none;
+          }
+
+          .card-latest-release {
+            position: relative;
+
+            .new-image {
+              width: 169px;
+              height: 169px;
+            }
+
+            .img-play {
+              display: none;
+            }
+
+            &:hover {
+              background: rgb(255 255 255 / 10%) !important;
+              border-radius: 5px;
+
+              .bk-img {
+                position: absolute;
+                top: 0;
+                z-index: 100;
+                display: block !important;
+                width: 169px;
+                height: 169px;
+                cursor: pointer;
+                background-color: rgb(0 0 0 / 20%);
+                border-radius: 5px;
+              }
+
+              .img-play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block !important;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+
+          .new-text {
+            display: flex;
+            flex: 1 0 0;
+            flex-direction: column;
+            gap: 4px;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 181px;
+            height: 170px;
+
+            @media (width <= 450px) {
+              width: 120px;
+            }
+
+            .title {
+              display: flex;
+              align-items: center;
+              color: $silver;
+            }
+
+            .title-name {
+              display: -webkit-box;
+              max-width: 180px;
+              overflow: hidden;
+              color: $white;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+
+              @media (width <= 450px) {
+                width: 120px;
+              }
+            }
+
+            .title-album {
+              max-width: 180px;
+              overflow: hidden;
+              color: $silver;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+
+              @media (width <= 450px) {
+                width: 120px;
+              }
+            }
+
+            .action-more {
+              position: relative;
+              display: flex;
+              justify-content: flex-end;
+              width: 100%;
+
+              .icon-que {
+                font-size: 20px;
+                cursor: pointer;
+              }
+
+              .dropdown-new-container {
+                .icon-more {
+                  font-size: 20px;
+                  cursor: pointer;
+                }
+
+                ul {
+                  list-style-type: none;
+                }
+
+                .dropdown {
+                  position: absolute;
+                  top: 20px;
+                  right: 0;
+                  z-index: 1;
+                  width: 173px !important;
+                  padding: 8px 0;
+                  text-align: left;
+                  background: $black-russian;
+                  border: 1px solid $bunker;
+                  border-radius: 10px;
+
+                  li {
+                    list-style-type: none;
+
+                    .dropdown-item {
+                      display: flex;
+                      align-items: center;
+                      padding: 6px 12px;
+                      cursor: pointer;
+
+                      .icon-list {
+                        margin-right: 12px;
+                      }
+
+                      &:hover {
+                        background: rgb(255 255 255 / 10%);
+                      }
+
+                      i {
+                        margin-right: 12px;
+                        font-size: 18px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .day {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 14px;
+              color: $gainsboro;
+            }
+          }
+        }
+      }
+    }
+
+    .artist-about {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    .image-banner {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}

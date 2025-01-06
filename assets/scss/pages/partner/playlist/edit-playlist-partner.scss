@@ -1,0 +1,577 @@
+.edit-playlist-partner-page {
+  margin-top: 80px;
+
+  .section-form {
+    padding: 16px 24px;
+    background: rgb(255 255 255 / 5%);
+    border: 1px solid rgb(224 224 224 / 20%);
+    border-radius: 10px;
+
+    .delete-playlist {
+      color: $red;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .step-desktop {
+      .checked-success {
+        background-color: $green;
+        border: 1px solid $green !important;
+      }
+
+      .circle-icon-first {
+        width: 38px;
+        height: 38px;
+        margin-right: 15px;
+
+        .icon-feed,
+        .icon-check {
+          font-size: 18px;
+        }
+      }
+
+      .circle-icon-second {
+        width: 38px;
+        height: 38px;
+        margin-right: 15px;
+        border: 1px solid $tuna;
+
+        .icon-note {
+          font-size: 18px;
+        }
+      }
+
+      .step-line {
+        width: 20px;
+        height: 40px;
+        margin: 10px 0;
+        border-right: 1px solid $tuna;
+      }
+
+      .title-step {
+        color: $gainsboro;
+      }
+
+      @media (width <= 767px) {
+        display: none;
+      }
+    }
+
+    .step-mobile {
+      .progress-circle {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        margin: 20px 20px 30px 0;
+        border: 5px solid $white;
+        border-radius: 50%;
+      }
+
+      .progress-circle::before {
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 60px;
+        height: 60px;
+        content: "";
+        border: 5px solid $white;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+      }
+
+      .p-success {
+        border: 5px solid $green;
+      }
+
+      @media (width >= 768px) {
+        display: none;
+      }
+    }
+
+    .input-file-groups-thumbnail {
+      position: relative;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+
+      .input-file-image {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding-right: 10px;
+        border: 1px solid rgb(249 249 249 / 20%);
+        border-radius: 5px;
+
+        .cover-image {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+
+          .file-cover {
+            width: 220px;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+
+          .line-cover-file {
+            width: 10px;
+            height: 70px;
+            margin: 0 0 0 10px;
+            border-left: 1px solid rgb(249 249 249 / 20%);
+          }
+
+          .cover-file-name {
+            .title-file-name {
+              width: 100%;
+              max-width: 400px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+
+              @media (width <= 990px) {
+                width: 200px;
+              }
+
+              @media (width <= 540px) {
+                width: 100px;
+              }
+            }
+
+            .title-file-size {
+              color: $silver;
+            }
+          }
+        }
+
+        .icon-del {
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+
+      .input-file-thumbnail {
+        height: 320px;
+        color: transparent !important;
+        cursor: pointer;
+        border: 1px dashed rgb(249 249 249 / 20%);
+      }
+
+      .img-thumbnail {
+        width: 170px;
+        height: 200px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+      }
+
+      .empty-thumbnail {
+        width: 170px;
+        height: 200px;
+        padding: 0;
+        object-fit: cover;
+        border: none;
+        border-radius: 8px;
+      }
+
+      ::-webkit-file-upload-button {
+        display: none;
+      }
+
+      .upload {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+
+        .icon-upload {
+          font-size: 40px;
+        }
+
+        .title-click-upload {
+          margin-top: 10px;
+          text-decoration: underline;
+        }
+
+        .title-max-size {
+          color: $silver;
+        }
+      }
+    }
+
+    .input-file-groups-cover {
+      position: relative;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+
+      .input-file-image {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding-right: 10px;
+        border: 1px solid rgb(249 249 249 / 20%);
+        border-radius: 5px;
+
+        .cover-image {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+
+          .file-cover {
+            width: 220px;
+            height: 225px;
+            object-fit: cover;
+            border-radius: 4px;
+          }
+
+          .line-cover-file {
+            width: 10px;
+            height: 70px;
+            margin: 0 0 0 10px;
+            border-left: 1px solid rgb(249 249 249 / 20%);
+          }
+
+          .cover-file-name {
+            .title-file-name {
+              width: 100%;
+              max-width: 400px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+
+              @media (width <= 990px) {
+                width: 200px;
+              }
+
+              @media (width <= 540px) {
+                width: 100px;
+              }
+            }
+
+            .title-file-size {
+              color: $silver;
+            }
+          }
+        }
+
+        .icon-del {
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+
+      .input-file-cover {
+        height: 320px;
+        color: transparent !important;
+        cursor: pointer;
+        border: 1px dashed rgb(249 249 249 / 20%);
+      }
+
+      .img-cover {
+        width: 100%;
+        max-width: 320px;
+        height: 115px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+      }
+
+      .empty-cover {
+        width: 170px;
+        height: 200px;
+        padding: 0;
+        object-fit: cover;
+        border: none;
+        border-radius: 8px;
+      }
+
+      ::-webkit-file-upload-button {
+        display: none;
+      }
+
+      .upload {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+
+        .icon-upload {
+          font-size: 40px;
+        }
+
+        .title-click-upload {
+          margin-top: 10px;
+          text-decoration: underline;
+        }
+
+        .title-max-size {
+          color: $silver;
+        }
+      }
+    }
+
+    .ck-error {
+      width: 100%;
+      margin-top: 0.25rem;
+      font-size: 0.875em;
+      color: $red;
+    }
+
+    .input-error {
+      display: flex;
+      flex-direction: column;
+      box-shadow: none;
+
+      .form-control {
+        &:hover {
+          border-radius: 8px !important;
+        }
+      }
+    }
+
+    .icon-error {
+      display: none;
+    }
+
+    .icon-calendar {
+      font-size: 25px;
+      color: $white;
+    }
+
+    .step-2 {
+      padding: 10px;
+      margin-bottom: 20px;
+      background: rgb(255 255 255 / 5%);
+      border-radius: 10px;
+
+      .section-table {
+        .data-table {
+          width: 100%;
+          margin-top: 16px;
+
+          th {
+            padding: 12px 8px;
+            text-align: start;
+            background: rgb(255 255 255 / 5%);
+          }
+
+          td {
+            padding: 12px 8px;
+            text-align: start;
+          }
+
+          .card-image {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .show-image {
+              width: 37px;
+              height: 37px;
+              object-fit: cover;
+            }
+
+            .title-music {
+              width: 100%;
+              max-width: 300px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+            .title-artist-mobile {
+              width: 100%;
+              max-width: 300px;
+              overflow: hidden;
+              color: $silver;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+            @media (width <= 1100px) {
+              .title-music,
+              .title-artist-mobile {
+                width: 100%;
+                max-width: 200px;
+              }
+            }
+
+            @media (width <= 950px) {
+              .title-music,
+              .title-artist-mobile {
+                width: 100%;
+                max-width: 100px;
+              }
+            }
+          }
+
+          .icon-view,
+          .icon-trash {
+            cursor: pointer;
+
+            &:hover {
+              color: $pastel-blue;
+            }
+          }
+        }
+
+        @media (width <= 767px) {
+          display: none;
+        }
+      }
+
+      .flex-button {
+        @media (width <= 830px) {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+
+      .empty-mobile {
+        @media (width >= 768px) {
+          display: none;
+        }
+      }
+
+      .section-table-mobile {
+        .bg-card-mobile {
+          padding: 10px;
+          background: rgb(255 255 255 / 6%);
+          border-radius: 10px;
+
+          .show-image-mobile {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+          }
+
+          .text-link-mobile {
+            width: 300px;
+            overflow: hidden;
+            color: $pastel-blue;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .artist-name-mobile {
+            width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .view-count {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .icon-trash-mobile {
+            font-size: 20px;
+          }
+
+          @media (width <= 650px) {
+            .text-link-mobile,
+            .artist-name-mobile {
+              width: 200px;
+            }
+          }
+
+          @media (width <= 450px) {
+            .text-link-mobile,
+            .artist-name-mobile {
+              width: 120px;
+            }
+          }
+
+          @media (width <= 540px) {
+            .text-link-mobile,
+            .artist-name-mobile,
+            .view-count {
+              max-width: 250px !important;
+
+              .view-date {
+                width: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+
+          @media (width <= 480px) {
+            .text-link-mobile,
+            .artist-name-mobile,
+            .view-count {
+              max-width: 150px !important;
+            }
+          }
+
+          @media (width <= 400px) {
+            .text-link-mobile,
+            .artist-name-mobile,
+            .view-count {
+              max-width: 120px !important;
+            }
+          }
+        }
+
+        @media (width >= 768px) {
+          display: none;
+        }
+      }
+    }
+
+    .btn-partner-solid-primary {
+      @media (width <= 830px) {
+        width: 100%;
+      }
+    }
+
+    .btn-outline-third {
+      border: none;
+
+      @media (width <= 767px) {
+        width: 100%;
+      }
+    }
+
+    .btn-outline-primary {
+      padding: 0 40px;
+
+      &:disabled {
+        color: $white;
+      }
+
+      @media (width <= 767px) {
+        width: 100%;
+      }
+    }
+
+    .button-card {
+      display: flex;
+      justify-content: space-between;
+
+      @media (width <= 767px) {
+        flex-direction: column-reverse;
+        gap: 20px;
+      }
+    }
+  }
+}

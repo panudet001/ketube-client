@@ -1,0 +1,23 @@
+* {
+  font-family: BeVietnamPro, SukhumvitSet, sans-serif;
+}
+
+.wrapper-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: auto;
+}
+
+.wrapper-content-full {
+  width: 100%;
+  max-width: 1840px;
+  padding: 20px;
+  margin: auto;
+}
+
+.wrapper-full {
+  position: relative;
+  left: -80px;
+  width: calc(100% + 80px);
+}

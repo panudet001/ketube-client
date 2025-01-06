@@ -1,0 +1,90 @@
+.ticket-request-page {
+  margin-top: 80px;
+
+  .section-card-ticket-request {
+    padding: 10px;
+    background: rgb(255 255 255 / 5%);
+    border-radius: 5px;
+
+    .section-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 110px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid rgb(249 249 249 / 20%);
+      border-radius: 5px;
+
+      h6 {
+        margin-top: 10px;
+      }
+
+      .item-center {
+        border-right: 1px solid rgb(249 249 249 / 20%);
+        border-left: 1px solid rgb(249 249 249 / 20%);
+      }
+
+      @media (width <= 800px) {
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        text-align: start;
+
+        h6 {
+          margin-top: 20px;
+        }
+
+        .item-center {
+          margin: 20px 0;
+          border: none;
+        }
+      }
+    }
+
+    .section-list-ticket-request {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 16px 24px;
+      margin-top: 10px;
+      text-align: center;
+      border: 1px solid rgb(249 249 249 / 20%);
+      border-radius: 5px;
+
+      .icon-search {
+        font-size: 18px;
+        color: $white;
+      }
+
+      @media (width <= 800px) {
+        padding: 10px;
+
+        .action {
+          flex-direction: column;
+
+          .text-filter {
+            display: none;
+          }
+
+          .input-group-partner {
+            width: 100%;
+          }
+
+          .btn-partner-solid-primary {
+            width: 100%;
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .section-table {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        background: rgb(255 255 255 / 5%);
+        border-radius: 5px;
+      }
+    }
+  }
+}

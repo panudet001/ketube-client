@@ -1,0 +1,349 @@
+@import "../../../../assets/scss/custom/typography";
+
+.que-list-component {
+  .que-total {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
+    .text-que-music {
+      display: flex;
+      align-items: center;
+      margin: 0 10px 0 0;
+      color: $white;
+
+      i {
+        margin-right: 10px;
+        font-size: 24px;
+      }
+    }
+
+    .duration-total {
+      color: $gainsboro;
+
+      .text-duration-total {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .playing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 338px;
+    padding: 5px;
+    margin-bottom: 15px;
+    background: rgb(255 255 255 / 10%);
+    border-radius: 5px;
+
+    @media screen and (width <= 900px) {
+      min-width: 100%;
+    }
+
+    .playing-music {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 220px;
+
+      @media screen and (width <= 375px) {
+        max-width: 160px;
+      }
+
+      .cover-music {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px 0 0;
+        object-fit: cover;
+        border-radius: 3px;
+      }
+
+      .group-music {
+        display: flex;
+        flex-direction: column;
+
+        .text-music {
+          width: 100%;
+          max-width: 150px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .text-artist {
+          width: 100%;
+          max-width: 150px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .section-action {
+      .sound-icon {
+        width: 15.63px;
+        height: 20px;
+        margin-right: 20px;
+
+        @media screen and (width <= 375px) {
+          margin-right: 10px;
+        }
+      }
+
+      .btn-icon {
+        padding: 0;
+        border: none;
+
+        .more-icon {
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+        }
+
+        .icon-del {
+          font-size: 24px;
+          color: $white;
+
+          &:hover {
+            color: $mauve;
+          }
+        }
+      }
+
+      .dropdown-menu {
+        background: $black-russian;
+        border-color: $bunker;
+        border-radius: 8px;
+
+        .dropdown-item {
+          display: flex;
+          column-gap: 12px;
+          align-items: center;
+          color: $white;
+
+          &:hover {
+            color: $white;
+            cursor: pointer;
+            background: rgb(255 255 255 / 10%);
+          }
+
+          .icon-setting {
+            width: 20px;
+            height: 20px;
+          }
+
+          .setting-item {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .section-drag-drop {
+    height: 338px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+
+    @media screen and (width <= 900px) {
+      height: 100%;
+      margin-bottom: 20px;
+    }
+
+    .drag-drop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 338px;
+      height: 60px;
+      margin-bottom: 20px;
+
+      @media screen and (width <= 900px) {
+        min-width: 100%;
+      }
+
+      .music {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .icon-up {
+          font-size: 24px;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            color: $mauve;
+          }
+        }
+
+        .cover-music {
+          width: 60px;
+          height: 60px;
+          margin: 0 10px;
+          object-fit: cover;
+          border-radius: 3px;
+        }
+
+        .group-music {
+          display: flex;
+          flex-direction: column;
+
+          .text-music {
+            width: 100%;
+            max-width: 170px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            @media screen and (width <= 900px) {
+              max-width: 350px;
+            }
+
+            @media screen and (width <= 600px) {
+              max-width: 170px;
+            }
+          }
+
+          .text-artist {
+            width: 100%;
+            max-width: 170px;
+            overflow: hidden;
+            color: $gainsboro;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          @media screen and (width <= 390px) {
+            .text-music,
+            .text-artist {
+              width: 135px;
+            }
+          }
+        }
+      }
+
+      .search-setting {
+        position: relative;
+
+        ul {
+          list-style-type: none;
+        }
+
+        .i {
+          cursor: pointer;
+        }
+
+        .icon-card {
+          display: flex;
+          align-items: center;
+        }
+
+        .icon-item {
+          width: 14px;
+          height: 14px;
+          margin-right: 12px;
+        }
+
+        .icon-menu {
+          margin-right: 12px;
+          font-size: 14px;
+        }
+
+        .btn-icon {
+          padding: 0;
+          border: none;
+
+          .more-icon {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+          }
+
+          .icon-del {
+            font-size: 24px;
+            color: $white;
+
+            &:hover {
+              color: $mauve;
+            }
+          }
+        }
+
+        .dropdown {
+          position: absolute;
+          top: 8px;
+          right: 0;
+          z-index: 1;
+          width: 170px !important;
+          padding: 8px 0;
+          font-size: 12px;
+          text-align: left;
+          background: $black-russian;
+          border-radius: 5px;
+          box-shadow: 0 0 4px 0 rgb(255 255 255 / 20%);
+
+          .dropdown-item {
+            padding: 6px 12px;
+            cursor: pointer;
+
+            &:hover {
+              background: rgb(255 255 255 / 10%);
+            }
+
+            i {
+              margin-right: 12px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-remove-queue {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    .btn-view-all {
+      height: 36px;
+      border: 1px solid rgb(249 249 249 / 20%);
+
+      @include font-button-3;
+
+      .icon-queue-del {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .que-not {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25%;
+
+    .img {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media screen and (width <= 900px) {
+      margin-top: 0;
+    }
+  }
+}
